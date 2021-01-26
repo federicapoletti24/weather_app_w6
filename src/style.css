@@ -25,19 +25,26 @@ li {
   list-style: none;
   font-size: 14px;
   font-weight: lighter;
+  text-transform: capitalize;
 }
 
 .weather-description {
   margin-bottom: 15px;
 }
 .temperature img {
+  float: left;
   margin-right: 15px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  height: 70px;
   width: 70px;
 }
 .temperature strong {
   font-size: 50px;
   font-weight: 100px;
-  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.units {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
 }
