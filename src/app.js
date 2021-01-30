@@ -1,10 +1,12 @@
 function showDate(timestamp) {
 let date = new Date(timestamp);
+let dateElement = date.getDate(timestamp);
 let hours = date.getHours(timestamp);
 if (hours <10) {
     hours = `0${hours}`;
 }
-
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let month = months[date.getMonth(timestamp)];
 let minutes = date.getMinutes(timestamp);
 if (minutes <10) {
     minutes = `0${minutes}`;
@@ -12,7 +14,7 @@ if (minutes <10) {
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[date.getDay(timestamp)];
 
-return `${day} ${hours}:${minutes}`;
+return `${day} ${dateElement} ${month} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {

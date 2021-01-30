@@ -21,13 +21,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
   font-size: 14px;
   font-weight: lighter;
-}
-li first-letter {
-  teext-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .weather-description {
