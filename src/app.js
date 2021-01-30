@@ -15,6 +15,7 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 let day = days[date.getDay(timestamp)];
 
 return `${day} ${dateElement} ${month} ${hours}:${minutes}`;
+
 }
 
 function displayTemperature(response) {
@@ -36,11 +37,15 @@ function displayTemperature(response) {
     windElement.innerHTML = Math.round(windValue);
     let date = document.querySelector("#date");
     date.innerHTML = showDate(response.data.dt * 1000);
+
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     
 }
 
 let apiKey = "dc8f5bf2676eeecb4b285e5dcb7dcb71";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Johannesburg";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
