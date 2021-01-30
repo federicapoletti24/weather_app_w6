@@ -19,7 +19,6 @@ return `${day} ${dateElement} ${month} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
-    console.log(response.data);
     let temperature = Math.round(response.data.main.temp);
     let tempValue = document.querySelector("#temperature");
     tempValue.innerHTML = temperature;
@@ -44,11 +43,7 @@ function displayTemperature(response) {
     
 }
 
-function searchCity(event) {
-    event.preventDefault();
-    let cityElement = document.querySelector("#city-input");
-    console.log(cityElement.value);
-}
+function search(city) {
 
 let apiKey = "dc8f5bf2676eeecb4b285e5dcb7dcb71";
 let city = "Johannesburg";
@@ -56,6 +51,16 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
+}
+
+
+function getSubmit(event) {
+    event.preventDefault();
+    let cityElement = document.querySelector("#city-input");
+    console.log(cityElement.value);
+}
+
+search("Tokyo");
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
+form.addEventListener("submit", getSubmit);
