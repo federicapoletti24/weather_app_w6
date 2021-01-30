@@ -29,6 +29,10 @@ li {
   text-transform: capitalize;
 }
 
+form {
+  margin-bottom: 15px;
+}
+
 .weather-description {
   margin-bottom: 15px;
 }
