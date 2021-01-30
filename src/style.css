@@ -25,7 +25,9 @@ li {
   list-style: none;
   font-size: 14px;
   font-weight: lighter;
-  text-transform: capitalize;
+}
+li first-letter {
+  teext-transform: capitalize;
 }
 
 .weather-description {
