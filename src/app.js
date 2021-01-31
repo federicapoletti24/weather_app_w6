@@ -57,7 +57,7 @@ axios.get(apiUrl).then(displayTemperature);
 function getSubmit(event) {
     event.preventDefault();
     let cityElement = document.querySelector("#city-input");
-    console.log(cityElement.value);
+    search(cityElement.value);
 }
 
 search("Tokyo");
