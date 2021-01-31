@@ -46,7 +46,6 @@ function displayTemperature(response) {
 function search(city) {
 
 let apiKey = "dc8f5bf2676eeecb4b285e5dcb7dcb71";
-let city = "Johannesburg";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
@@ -59,8 +58,6 @@ function getSubmit(event) {
     let cityElement = document.querySelector("#city-input");
     search(cityElement.value);
 }
-
-search("Tokyo");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", getSubmit);
