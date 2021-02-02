@@ -61,3 +61,13 @@ function getSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", getSubmit);
+
+function showFahrenheit(event) {
+    preventDefault();
+    let temperature = document.querySelector("#temperature");
+    alert("link"); 
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+
+fahrenheitLink.addEventListener("click", showFahrenheit);
