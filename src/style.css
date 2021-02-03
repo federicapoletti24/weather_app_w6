@@ -1,5 +1,6 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 .weather-app {
@@ -8,13 +9,13 @@ body {
   padding: 20px;
   border: 1px solid #dadded;
   border-radius: 10px;
+  background-image: url("https://image.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg");
 }
 
 h1 {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400px;
   font-size: x-large;
-  color: #878787;
 }
 
 ul {
@@ -22,17 +23,23 @@ ul {
   padding: 0;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
 li {
   list-style: none;
   font-size: 14px;
   font-weight: lighter;
-  text-transform: capitalize;
 }
 
 form {
   margin-bottom: 15px;
 }
 
+small {
+  font-size: 10px;
+  margin: 30px auto;
+}
 .weather-description {
   margin-bottom: 15px;
 }
@@ -57,4 +64,28 @@ form {
   position: relative;
   font-size: 18px;
   top: -20px;
+}
+
+.card-body {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.card-body img {
+  display: block;
+  margin: 0 auto;
+}
+
+.link {
+  color: white;
+}
+
+.btn-primary {
+  color: black;
+  background-color: white;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: blue;
 }

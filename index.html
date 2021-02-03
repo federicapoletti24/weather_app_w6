@@ -7,6 +7,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
@@ -28,16 +31,16 @@
         
     </li>
     <li>
-       <span id="description">Partly cloudy</span> 
+       <span id="description">Today is going to be a great day</span> 
     </li>
 </ul>
 <div class="description">
 <div class="row">
     <div class="col-6">
         <div class="clearfix temperature">
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy" class="float-left" id="icon";/>
-   <strong id="temperature">-1</strong>
-   <span class="units">°<a href="#" id="celsius-link" class="active">C</a> | °<a href="#" id="fahrenheit-link">F</a></span>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="sunny" class="float-left" id="icon" ; />
+       <strong id="temperature">24</strong>
+   <span class="units">°<a href="#" id="celsius-link" class="active link">C</a> | °<a href="#" id="fahrenheit-link" class="link">F</a></span>
 
 </div>
     </div>
@@ -53,10 +56,60 @@
         </ul>
     </div>
     </div>
+<div class="row forecast">
+    <div class="col-3">
+    <div class="card">
+        <div class="card-body">
+            Thursday
+            <br />
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="partly_cloudy" class="float-left" id="icon-thu";/>
+            <br />
+            <span class="forecast-temp">5°</span>
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+        <div class="card-body">
+            Friday
+            <br />
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="partly_cloudy" class="float-left"
+                id="icon-fri" ; />
+            <br />
+            <span class="forecast-temp">5°</span>
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+        <div class="card-body">
+            Saturday
+            <br />
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="partly_cloudy" class="float-left"
+                id="icon-sat" ; />
+                <br />
+                <span class="forecast-temp">5°</span>
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <div class="card">
+        <div class="card-body">
+            Sunday
+            <br />
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="partly_cloudy" class="float-left"
+                id="icon-san";/>
+            <br />
+            <span class="forecast-temp">5°</span>
+        </div>
+    </div>
+</div>
 </div>
 <small>
-    <a href="https://github.com/federicapoletti24/weather_app_w6" target="_blank">Open-source code </a>by Federica Poletti
+    <a href="https://github.com/federicapoletti24/weather_app_w6" target="_blank" class="link">Open-source code </a>by Federica
+    Poletti
 </small>
+</div>
 </div>
     </div>
     <script src="src/app.js"></script>
