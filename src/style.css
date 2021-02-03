@@ -83,6 +83,7 @@ small {
 .btn-primary {
   color: black;
   background-color: white;
+  border: none;
 }
 
 .btn-primary:hover {

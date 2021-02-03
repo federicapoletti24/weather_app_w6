@@ -45,6 +45,10 @@ function displayTemperature(response) {
     
 }
 
+function displayForecast(response) {
+    console.log(response.data);
+}
+
 function search(city) {
 
 let apiKey = "dc8f5bf2676eeecb4b285e5dcb7dcb71";
@@ -52,6 +56,9 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
+
+let apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast/hourly?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrlForecast).then(displayForecast);
 }
 
 
