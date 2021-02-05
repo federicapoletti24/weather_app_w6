@@ -86,7 +86,18 @@ small {
   border: none;
 }
 
-.btn-primary:hover {
+.btn-success {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.btn-success:hover {
   cursor: pointer;
   background-color: blue;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: #ec6e4c;
 }
